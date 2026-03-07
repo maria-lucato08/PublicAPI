@@ -1,0 +1,25 @@
+.mainLayout{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--black-main);
+}
+
+.main{
+  display: flex;  
+  align-items: center;     
+  flex-direction: column;  
+  flex: 1;  
+}
+
+.frase{
+    margin-top: 20px;
+    color: var(--text-main);
+}
+
+.buttonContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}

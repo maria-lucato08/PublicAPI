@@ -1,0 +1,25 @@
+.header{
+    background-color: var(--green-dark);
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 15px 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: bold;
+}
+
+nav a:hover{
+    text-shadow: 0px 0px 10px var(--green-light);
+    transition: 0.5s;
+}
