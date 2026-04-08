@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MainLayout } from "../../layouts";
+import { LayoutAPI } from "../../layouts";
 
 import styles from "./Colors.module.css";
 
@@ -22,14 +22,14 @@ fetch(`https://www.thecolorapi.com/id?hex=${hex}`)
 }
 
     return(
-        <MainLayout frase="as cores disponíveis" funcao={coresAleatorias}>
+        <LayoutAPI frase="as cores disponíveis" funcao={coresAleatorias}>
             {cor && (
                 <div className={styles.apiColors}>
                 <p>{cor.hex}</p>
                 <img src={cor.image} width="200" />
                 </div>
             )}
-        </MainLayout>
+        </LayoutAPI>
     );
 };
 
