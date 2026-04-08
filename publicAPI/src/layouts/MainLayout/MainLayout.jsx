@@ -1,18 +1,12 @@
-import { Header, Button } from '../../components'
+import { Header } from '../../components'
 
 import styles from './MainLayout.module.css';
 
-const MainLayout = ({ frase, children, funcao }) => {
+const MainLayout = ({ children }) => {
     return (
         <div className={styles.mainLayout}>  
             <Header />
-            <main className={styles.main}>
-                <h2 className={styles.frase}>Veja {frase}!</h2>
-                {children}
-            </main>
-            <div className={styles.buttonContainer}>
-               <Button onClick={funcao}/> 
-            </div>
+            { children }
         </div>
     );
 };

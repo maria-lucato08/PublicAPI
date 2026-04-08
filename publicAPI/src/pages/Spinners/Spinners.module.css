@@ -1,0 +1,41 @@
+.containerSpinners{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    gap: 50px;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+.genetic{
+    animation: spin 5s linear infinite;
+}
+
+.setup{
+    animation: spin 5s alternate infinite;
+}
+
+.universe{
+    animation: a 5s backwards infinite;
+}
+
+.airplane{
+    animation: spin 2s forwards infinite;
+}
+
+.apib{
+    animation: a 3s alternate-reverse infinite;
+}
+
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+@keyframes a {
+    to { transform: rotate(180deg); }
+}

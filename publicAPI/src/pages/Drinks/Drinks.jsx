@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MainLayout } from "../../layouts";
+import { LayoutAPI } from "../../layouts";
 
 import styles from "./Drinks.module.css";
 
@@ -22,14 +22,14 @@ function bebidasAleatorias() {
 };
         
         return(
-            <MainLayout frase="as bebidas disponíveis" funcao={bebidasAleatorias}>
+            <LayoutAPI frase="as bebidas disponíveis" funcao={bebidasAleatorias}>
             {drinks && (
                 <div className={styles.apiDrinks}>
                 <p>{drinks.name}</p>
                 <img src={drinks.image} width="200" />
                 </div>
             )}
-        </MainLayout>   
+        </LayoutAPI>   
     );
 };
 

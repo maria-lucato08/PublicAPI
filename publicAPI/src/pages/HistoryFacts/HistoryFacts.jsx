@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MainLayout } from "../../layouts";
+import { LayoutAPI } from "../../layouts";
 
 import styles from "./HistoryFacts.module.css";
 
@@ -24,11 +24,11 @@ fetch("https://history.muffinlabs.com/date")
 };
 
     return(
-       <MainLayout frase="o fato histórico de hoje" funcao={fatosHistoricos}>
+       <LayoutAPI frase="o fato histórico de hoje" funcao={fatosHistoricos}>
         <div className={styles.apiHistoryFacts}>
          {fato && <p>{fato.fact}</p>}
         </div>
-       </MainLayout>
+       </LayoutAPI>
     );
 };
 
